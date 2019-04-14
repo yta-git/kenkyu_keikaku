@@ -1,0 +1,57 @@
+\documentclass[11pt,a4paper,titlepage]{jarticle}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[dvipdfm]{graphicx}
+\usepackage{ascmac}
+\usepackage[dvipdfm]{hyperref}
+\usepackage{here}
+\usepackage{txfonts}
+\usepackage{listings, jlisting}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{titlesec}
+% \titleformat*{\section}{\large\bfseries}
+\renewcommand{\lstlistingname}{ソースコード}
+% \renewcommand{\thesection}{課題\arabic{section}}
+
+\lstset{
+  %language={c},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex,%
+  keepspaces=true,
+  tabsize=4,
+  showstringspaces=false,
+  keepspaces=true
+}
+
+\def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
+\title{\Huge ネットワーク実験レポート(無線)}
+\author{実験日: 平成30 年4 月12 日\\担当教員: 奥田　隆史，田　学軍，神谷　直希\\ \\実験者: 湯川 大雅(2016311093)}
+\date{}
+
+\begin{document}
+\maketitle
+
+% \setcounter{section}{10}
+\input{body}
+\bibliographystyle{jplain_sist02}
+\bibliography{bunken}
+
+\end{document}
