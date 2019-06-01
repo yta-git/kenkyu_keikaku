@@ -1,5 +1,5 @@
-\documentclass[11pt,a4paper,titlepage]{jarticle}
-\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\documentclass[11pt,a4paper,twocolumn]{jarticle}
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
 
 \usepackage{amsmath,amssymb}
 \usepackage{bm}
@@ -13,6 +13,7 @@
 \usepackage{booktabs}
 \usepackage{url}
 \usepackage{titlesec}
+\usepackage{fancyhdr}
 % \titleformat*{\section}{\large\bfseries}
 \renewcommand{\lstlistingname}{ソースコード}
 % \renewcommand{\thesection}{課題\arabic{section}}
@@ -41,13 +42,20 @@
   keepspaces=true
 }
 
+\pagestyle{fancy}
+\lhead{}
+\rhead{試\ 験\ 区\ 分：情報科学区分　　　　　　　\\氏　　　名：湯川　大雅　　　　　　　　\\現在の専門：コンピュータアーキテクチャ\\希望研究室：情報基盤システム学研究室　}
+
 \def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
-\title{\Huge ネットワーク実験レポート(無線)}
-\author{実験日: 平成30 年4 月12 日\\担当教員: 奥田　隆史，田　学軍，神谷　直希\\ \\実験者: 湯川 大雅(2016311093)}
-\date{}
+\title{\Huge タイトル}
+%\author{名前}
+\date{\begin{flushleft}\bf{要旨} --- 
+\rm{これはテスト．これはテストこれはテストこれはテストこれはテストこれはテスト\\ これはテストこれはテストこれはテストこれはテストこれはテストこれはテストこれはテストこれはテストこれはテストこれはテストこれはテスト}\end{flushleft}}
 
 \begin{document}
 \maketitle
+\thispagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt} % ヘッダーの羅線をなくす
 
 % \setcounter{section}{10}
 \input{body}
