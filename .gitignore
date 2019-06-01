@@ -4,3 +4,8 @@ master.pdf
 master.aux
 master.out
 .DS_Store
+body.tex
+body.texe
+body_tmp.md
+master.bbl
+master.blg
