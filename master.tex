@@ -43,31 +43,29 @@
 }
 
 \makeatletter
-  \renewenvironment{thebibliography}[1]{%
-    \global\let\presectionname\relax
-    \global\let\postsectionname\relax
-    \section*{\refname}\@mkboth{\refname}{\refname}%
-    \list{\@biblabel{\@arabic\c@enumiv}}%
-          {\settowidth\labelwidth{\@biblabel{#1}}%
-          \leftmargin\labelwidth
-          \advance\leftmargin\labelsep
-          % 文字サイズ？
-          \setlength\baselineskip{0pt}
-          % アイテム間のマージン
-          \setlength\itemsep{0zh}
-          \@openbib@code
-          \usecounter{enumiv}%
-          \let\p@enumiv\@empty
-          \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-    \sloppy
-    \clubpenalty4000
-    \@clubpenalty\clubpenalty
-    \widowpenalty4000%
-    \sfcode`\.\@m}
-    {\def\@noitemerr
-      {\@latex@warning{Empty `thebibliography' environment}}%
-    \endlist}
+\renewenvironment{thebibliography}[1]
+{\section*{\refname\@mkboth{\refname}{\refname}}%
+  \list{\@biblabel{\@arabic\c@enumiv}}%
+       {\settowidth\labelwidth{\@biblabel{#1}}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+ \setlength\itemsep{0zh}%←ここの数値を調整(行間のつまり具合)
+ \setlength\baselineskip{1pt}%←ここの数値を調整（追加）(文字の大きさ)
+        \@openbib@code
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+  \sloppy
+  \clubpenalty4000
+  \@clubpenalty\clubpenalty
+  \widowpenalty4000%
+  \sfcode`\.\@m}
+ {\def\@noitemerr
+   {\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist}
 \makeatother
+
+\def\baselinestretch{0.85}
 
 % 図と図の間のスペース
 \setlength\floatsep{2truemm}
@@ -76,7 +74,7 @@
 % 本文中の図のスペース
 \setlength\intextsep{1pt}
 % 図とキャプションの間のスペース
-\setlength\abovecaptionskip{-2truemm}
+\setlength\abovecaptionskip{0truemm}
 
 \setlength{\columnsep}{2zw}
 
