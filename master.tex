@@ -52,9 +52,9 @@
           \leftmargin\labelwidth
           \advance\leftmargin\labelsep
           % 文字サイズ？
-          \setlength\baselineskip{11pt}
+          \setlength\baselineskip{0pt}
           % アイテム間のマージン
-          \setlength\itemsep{0.4zh}
+          \setlength\itemsep{0zh}
           \@openbib@code
           \usecounter{enumiv}%
           \let\p@enumiv\@empty
@@ -69,12 +69,21 @@
     \endlist}
 \makeatother
 
+% 図と図の間のスペース
+\setlength\floatsep{2truemm}
+% 本文と図の間のスペース
+\setlength\textfloatsep{2truemm}
+% 本文中の図のスペース
+\setlength\intextsep{1pt}
+% 図とキャプションの間のスペース
+\setlength\abovecaptionskip{-2truemm}
 
 \setlength{\columnsep}{2zw}
 
 \pagestyle{fancy}
 \lhead{}
 \rhead{\footnotesize{試\ 験\ 区\ 分：情報科学区分　　　　　　　\\氏　　　名：湯川　大雅　　　　　　　　\\現在の専門：コンピュータアーキテクチャ\\希望研究室：情報基盤システム学研究室　}}
+\cfoot{}
 
 \def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
 \title{\vspace{-0.5zh}タイトル\vspace{-2.7zh}}
@@ -92,7 +101,7 @@
 
 \input{body}
 %\bibliographystyle{jplain_sist02}
-\bibliographystyle{junsrt}
+\bibliographystyle{jplain}
 \bibliography{bunken}
 
 \end{document}
