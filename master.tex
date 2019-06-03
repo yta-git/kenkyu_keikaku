@@ -49,8 +49,8 @@
        {\settowidth\labelwidth{\@biblabel{#1}}%
         \leftmargin\labelwidth
         \advance\leftmargin\labelsep
- \setlength\itemsep{0zh}%←ここの数値を調整(行間のつまり具合)
- \setlength\baselineskip{1pt}%←ここの数値を調整（追加）(文字の大きさ)
+ \setlength\itemsep{-0.5zh}%←ここの数値を調整(行間のつまり具合)
+ \setlength\baselineskip{0zh}%←ここの数値を調整（追加）(文字の大きさ)
         \@openbib@code
         \usecounter{enumiv}%
         \let\p@enumiv\@empty
@@ -64,6 +64,8 @@
    {\@latex@warning{Empty `thebibliography' environment}}%
   \endlist}
 \makeatother
+
+
 
 \def\baselinestretch{0.85}
 
@@ -100,6 +102,7 @@
 \input{body}
 %\bibliographystyle{jplain_sist02}
 \bibliographystyle{jplain}
-\bibliography{bunken}
+{\
+{\tiny \bibliography{bunken}}
 
 \end{document}
