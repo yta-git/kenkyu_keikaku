@@ -10,7 +10,7 @@
 
 ## 研究背景
 
-近代的な自動車には，安全向上や効率改善など様々な目的の為にElectronic Control Unit(ECU)が
+近代的な自動車には，安全性向上や効率改善など様々な目的の為にElectronic Control Unit(ECU)が
 複数装備されている．そして，それぞれのECUは車内ネットワークを通じて情報の交換や制御を行なっている[[carhackers]]．
 ECU同士の通信の際には，現在のところ，簡単な構造も持ち，かつ信頼性の高いController Area Network(CAN)プロトコルが広く用いられている．
 
